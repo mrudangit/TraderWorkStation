@@ -1,0 +1,22 @@
+{
+  "npmScope": "trader-desktop",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "app-launcher": {
+      "tags": []
+    },
+    "app-launcher-e2e": {
+      "tags": [],
+      "implicitDependencies": ["app-launcher"]
+    }
+  }
+}
