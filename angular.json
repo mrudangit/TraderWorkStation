@@ -23,7 +23,8 @@
             "aot": true,
             "assets": [
               "apps/app-launcher/src/favicon.ico",
-              "apps/app-launcher/src/assets"
+              "apps/app-launcher/src/assets",
+              "apps/app-launcher/src/app.json"
             ],
             "styles": ["apps/app-launcher/src/styles.scss"],
             "scripts": []
