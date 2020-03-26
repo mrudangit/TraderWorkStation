@@ -1,0 +1,80 @@
+{
+  "runtime": {
+    "arguments": "--v=1 --inspect",
+    "version": "15.80.48.13"
+  },
+  "enableAppLogging": true,
+  "logManagement": {
+    "enabled": true,
+    "url": "http://mrudang-WS-Z390-PRO:8080/sendLogs"
+  },
+  "permissions": {
+    "ExternalWindow": {
+      "wrap": true
+    },
+    "System": {
+      "getAllExternalWindows": true,
+      "launchExternalProcess": true,
+      "readRegistryValue": false,
+      "terminateExternalProcess": true
+    }
+  },
+  "platform": {
+    "uuid": "TraderDesktopPlatform",
+    "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
+    "autoShow": false,
+    "enableAppLogging": true,
+    "logManagement": {
+      "enabled": true,
+      "url": "http://mrudang-WS-Z390-PRO:8080/sendLogs"
+    },
+    "permissions": {
+      "ExternalWindow": {
+        "wrap": true
+      },
+      "System": {
+        "getAllExternalWindows": true,
+        "launchExternalProcess": true,
+        "readRegistryValue": false,
+        "terminateExternalProcess": true
+      }
+    }
+  },
+  "snapshot": {
+    "windows": [
+      {
+        "defaultWidth": 800,
+        "defaultHeight": 600,
+        "defaultLeft": 0,
+        "defaultTop": 0,
+        "saveWindowState": false,
+        "backgroundThrottling": true,
+        "layout": {
+          "content": [
+            {
+              "type": "stack",
+              "width": 100,
+              "isClosable": true,
+              "reorderEnabled": true,
+              "title": "",
+              "activeItemIndex": 0,
+              "content": [
+                {
+                  "type": "component",
+                  "componentName": "view",
+                  "componentState": {
+                    "url": "http://localhost:4200/index.html",
+                    "name": "component_1584192605288"
+                  },
+                  "isClosable": true,
+                  "reorderEnabled": true,
+                  "title": "view"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

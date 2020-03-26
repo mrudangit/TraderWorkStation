@@ -48,4 +48,17 @@ export class AppComponent implements OnInit{
     const app = await fin.Application.getCurrent();
     return await app.setAppLogUsername('MrudangMajmudar');
   }
+
+  getPlatform($event: MouseEvent) {
+    const platform = fin.Platform.getCurrentSync();
+
+    console.log('Platform = ', platform);
+  }
+
+  async getExternalWindows($event: MouseEvent) {
+    const externalWindows = await fin.System.getAllExternalWindows();
+
+    console.log('External Windows : ', externalWindows);
+
+  }
 }
