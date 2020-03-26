@@ -1,7 +1,22 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "traderDesktop", "camelCase"],
-    "component-selector": [true, "element", "trader-desktop", "kebab-case"]
+    "directive-selector": [
+      true,
+      "attribute",
+      "traderDesktop",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "trader-desktop",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "!**/*"
+    ]
   }
 }
