@@ -1,7 +1,7 @@
 {
   "runtime": {
     "arguments": "--v=1 --inspect",
-    "version": "15.80.48.13"
+    "version": "15.80.49.30"
   },
   "enableAppLogging": true,
   "logManagement": {
@@ -23,6 +23,7 @@
     "uuid": "TraderDesktopPlatform",
     "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
     "autoShow": false,
+    "providerUrl": "http://localhost:4200/assets/provider.html",
     "enableAppLogging": true,
     "logManagement": {
       "enabled": true,
@@ -38,15 +39,31 @@
         "readRegistryValue": false,
         "terminateExternalProcess": true
       }
-    }
+    },
+    "defaultWindowOptions": {
+      "url": "http://localhost:4200/index.html",
+      "contextMenu": true,
+      "defaultWidth": 600,
+      "defaultHeight": 600,
+      "defaultLeft": 0,
+      "defaultTop": 0,
+      "saveWindowState": false,
+      "backgroundThrottling": true
+    },
+    "commands": [
+      {
+        "command": "stack.nextTab",
+        "keys": "Ctrl+Tab"
+      }
+    ]
   },
   "snapshot": {
     "windows": [
       {
         "defaultWidth": 800,
         "defaultHeight": 600,
-        "defaultLeft": 0,
-        "defaultTop": 0,
+        "defaultLeft": 100,
+        "defaultTop": 100,
         "saveWindowState": false,
         "backgroundThrottling": true,
         "layout": {

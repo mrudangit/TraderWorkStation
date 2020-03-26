@@ -1,11 +1,10 @@
-<div style="display: flex; align-items: center" >
-  <a href="#"><i class="pi pi-bars"></i></a>
-  <div >Log Dashboard</div>
-  <div>
-    <button (click)="uploadLogs($event)">UpLoad Logs</button>
-    <button (click)="getPlatform($event)">Get Platform</button>
-
-    <button (click)="getExternalWindows($event)">Show External Windows</button>
+<div id="title-bar">
+  <div class="title-bar-draggable">
+    <div id="title"></div>
   </div>
+  <div id="buttons-wrapper">
+    <div class="button" id="minimize-button" (click)="windowMinimize($event)"></div>
+  <div class="button" id="expand-button" (click)="windowRestore($event)"></div>
+<div class="button" id="close-button" (click)="windowClose($event)"></div>
 </div>
-
+</div>

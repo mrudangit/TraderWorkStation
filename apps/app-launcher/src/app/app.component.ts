@@ -61,4 +61,24 @@ export class AppComponent implements OnInit{
     console.log('External Windows : ', externalWindows);
 
   }
+
+  windowMinimize($event: MouseEvent) {
+    fin.me.minimize().catch(console.error);
+  }
+
+  windowRestore($event: MouseEvent) {
+    this.maxOrRestore().catch(console.error)
+  }
+
+  windowClose($event: MouseEvent) {
+    fin.me.close().catch(console.error)
+  }
+
+  async maxOrRestore() {
+    if (await fin.me.getState() === "normal") {
+      return await fin.me.maximize();
+    }
+
+    return fin.me.restore();
+  }
 }
