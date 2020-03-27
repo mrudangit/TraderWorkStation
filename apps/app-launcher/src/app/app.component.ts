@@ -35,6 +35,10 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void {
+    console.log('Main Tool Bar Initialized');
+
+    fin.InterApplicationBus.subscribe({ uuid: '*' }, 'topic', sub_msg => console.log(sub_msg)).then(() => console.log('Subscribed to the specified application')).catch(err => console.log(err));
+
   }
 
 
@@ -80,5 +84,14 @@ export class AppComponent implements OnInit{
     }
 
     return fin.me.restore();
+  }
+
+  testPlatform($event: MouseEvent) {
+    console.log('Test Platform');
+    const tabs = document.getElementsByClassName("lm_tabs");
+
+    console.log('Tabs : ', tabs);
+
+
   }
 }

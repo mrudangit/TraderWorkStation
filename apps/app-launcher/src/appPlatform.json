@@ -48,7 +48,7 @@
       "defaultLeft": 0,
       "defaultTop": 0,
       "saveWindowState": false,
-      "backgroundThrottling": true
+      "backgroundThrottling": false
     },
     "commands": [
       {
@@ -65,7 +65,7 @@
         "defaultLeft": 100,
         "defaultTop": 100,
         "saveWindowState": false,
-        "backgroundThrottling": true,
+        "backgroundThrottling": false,
         "layout": {
           "content": [
             {
@@ -80,12 +80,23 @@
                   "type": "component",
                   "componentName": "view",
                   "componentState": {
-                    "url": "http://localhost:4200/index.html",
-                    "name": "component_1584192605288"
+                    "url": "http://localhost:5000/index.html",
+                    "name": "component_1584192605288A"
                   },
                   "isClosable": true,
                   "reorderEnabled": true,
-                  "title": "view"
+                  "title": "view1"
+                },
+                {
+                  "type": "component",
+                  "componentName": "view",
+                  "componentState": {
+                    "url": "http://localhost:5000/index.html",
+                    "name": "component_1584192605288Ab"
+                  },
+                  "isClosable": true,
+                  "reorderEnabled": true,
+                  "title": "view2"
                 }
               ]
             }
